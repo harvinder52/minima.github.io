@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Minima</title>
+</head>
+<style type="text/css">
+	
+.flex-container {
+  display: flex;
+ 
+  
+  background-color: #FBFCF6;
+  height: 500px;
+  width: 100%;
+  background-color: teal;
+}
+
+.pageCard {
+	text-align: left;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    background-color: #FBFCF6;
+    padding: 5px;
+    width: 55%;
+    margin: 10px;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    left: 0%;
+  }
+
+ #sideSection{
+ 	opacity: 0.0;
+	text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: gray;
+    padding: 5px;
+    width: 20%;
+    margin: 10px;
+    height: 50%;
+}
+#minimaNavbar{
+	border-radius: 4px;
+	border-bottom: white;
+	width: 100%;
+	height: 35px;
+	background-color: black;
+	color: #FBFCF6;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1.25Rem;
+	font-family: gothic;
+	}
+
+.profileIMG{
+	padding: 25px;
+	padding-top: 50px;
+	border-radius: 30%;
+}
+#minFooter{
+	border-radius: 4px;
+	background-color: black;
+	width: 100%;
+	display: flex;
+	background-color: black;
+	color: white;
+	
+	padding-top: 10px;
+	
+	font-family: sans-serif;
+
+}
+
+.contBut{
+	position: relative;
+	top: 20%;
+	left: 5%;
+}
+.col{
+     justify-content: space-between;
+}
+
+
+.userTitle{
+	padding-left:20px;
+
+}
+
+.userTitle:hover + #sideSection {
+	opacity: 1.0;
+}
+
+
+
+
+</style>
+<body>
+<div style="text-align: center; background-color: #FBFCF6; padding-right: 20%; padding-left: 20%;">
+	<h2>Welcome to MINIMA!</h2>
+	<p>Minima is a chrome extension which helps in increasing the efficiency of the non-technical users(like PMs, Designers ...) to quickly change, experiment, and play around with styling, content of the existing website without the need to code and either publish them or share with others for feedback.</p>
+
+</div>
+
+<div style="text-align: center; background-color: #FBFCF6; padding-right: 15%; padding-left: 15%;">
+	<h2>How to Install Minima?</h2>
+	<p>Minima is a chrome extension, hence it needs to be installed from chrome webstore. To quickly install it follow the link down below and then click on  "add to extension" there, when Minima icon appears at the menu bar loacted at top-right of your browser, that means Minima has been installed and you can come back here on our Webpage.<br>
+    Minima Extension Link <button> Install Now</button>
+	 </p>
+
+</div>
+
+<div>
+	
+
+
+
+</div>
+<nav id="minimaNavbar"> Welcome to My Website!</nav>
+<div class="flex-container">
+		
+
+
+
+
+
+ <div id="sideSection">
+		
+
+		<h2>List</h2>
+	<ul>     
+	    <li>no. 1 list</li>
+        <li>no. 1 list</li>
+        <li>no. 1 list</li>
+    </ul>
+
+        <button class="contBut"> Contact Me!</button>      
+  </div>
+ <div class="pageCard">
+ 	
+  <img class="profileIMG" src="placeIMG.png" alt="Avatar" align="right" >
+
+		<h2 class="userTitle" >Username</h2>
+        <p style="padding: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut
+        </p>
+        <button class="contBut"> Contact Me!</button> 
+ </div>
+</div>
+
+
+<footer id="minFooter">
+	<div class="col1">
+	<ul>     
+	    <li>About Us</li>
+        <li> Reviews</li>
+        <li> Feedback</li>
+    </ul>
+    </div>
+    <div class="col">
+	<ul>     
+	    <li>About Us</li>
+        <li> Reviews</li>
+        <li> Feedback</li>
+    </ul>
+    </div>
+    <div class="col">
+	<ul>     
+	    <li>About Us</li>
+        <li> Reviews</li>
+        <li> Feedback</li>
+    </ul>
+    </div>
+</footer>
+
+
+	
+</body>
+</html>
