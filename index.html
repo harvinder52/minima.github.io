@@ -4,19 +4,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
 	<title>Minima</title>
 </head>
 <style type="text/css">
+
+	body{
+		font-family: sans-serif;
+	}
 	
 .flex-container {
   display: flex;
  
-  
-  background-color: #FBFCF6;
+  justify-content: space-around;
+  background-color: white;
   height: 500px;
   width: 100%;
-  background-color: teal;
+  
 }
 
 .pageCard {
@@ -24,24 +28,16 @@
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
     background-color: #FBFCF6;
     padding: 5px;
-    width: 55%;
+    width: 100%;
     margin: 10px;
-    height: 400px;
+    height: 80%;
     position: relative;
     top: 10%;
     left: 0%;
+    font-family: sans-serif;
   }
 
- #sideSection{
- 	opacity: 0.0;
-	text-align: left;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: gray;
-    padding: 5px;
-    width: 20%;
-    margin: 10px;
-    height: 50%;
-}
+
 #minimaNavbar{
 	border-radius: 4px;
 	border-bottom: white;
@@ -52,7 +48,7 @@
 	text-align: center;
 	padding-top: 10px;
 	font-size: 1.25Rem;
-	font-family: gothic;
+	
 	}
 
 .profileIMG{
@@ -64,6 +60,7 @@
 	border-radius: 4px;
 	background-color: black;
 	width: 100%;
+	height: auto;
 	display: flex;
 	background-color: black;
 	color: white;
@@ -75,8 +72,8 @@
 }
 
 .contBut{
-	position: relative;
-	top: 20%;
+	position: absolute;
+	top: 80%;
 	left: 5%;
 }
 .col{
@@ -93,6 +90,23 @@
 	opacity: 1.0;
 }
 
+#tooltip{
+	background-color: red;
+}
+
+
+
+.minSteps{
+	font-family: sans-serif;
+	background-color: gray;
+}
+
+.stepsContainer{
+	display: flex;
+	padding-left: 10px;
+	justify-content: space-around;
+	flex-direction: column;
+}
 
 
 
@@ -120,34 +134,33 @@
 </div>
 <nav id="minimaNavbar"> Welcome to My Website!</nav>
 <div class="flex-container">
+<div class="stepsContainer">		
+<div class="minSteps"> <h3>Change the button style from Minima Repo</h3> </div>
 		
-
-
-
-
-
- <div id="sideSection">
+<div class="minSteps"> <h3>Change the button style from Minima Repo.</h3><p>Go to the tab "Library" in the floating pane. Select your favourite style.</p> </div>
 		
+<div class="minSteps"> <h3>Change the button style from Minima Repo</h3> </div>
+</div>
 
-		<h2>List</h2>
-	<ul>     
-	    <li>no. 1 list</li>
-        <li>no. 1 list</li>
-        <li>no. 1 list</li>
-    </ul>
 
-        <button class="contBut"> Contact Me!</button>      
-  </div>
+
+ 
  <div class="pageCard">
  	
   <img class="profileIMG" src="placeIMG.png" alt="Avatar" align="right" >
 
-		<h2 class="userTitle" >Username</h2>
-        <p style="padding: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+		<h1 class="userTitle" >Username</h1>
+		<h2 class="userTitle" >Profession </h2>
+        <p style="padding: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
         	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut
-        </p>
-        <button class="contBut"> Contact Me!</button> 
+        </p><button class="contBut"> Contact Me!</button> 
  </div>
+<div class="stepsContainer">
+<div class="minSteps"> <h3>Change the button style from Minima Repo.</h3><p>Go to the tab "Library" in the floating pane. Select your favourite style.</p> </div>
+		
+<div class="minSteps"> <h3>Change the button style from Minima Repo</h3> </div>
+</div>
+
 </div>
 
 
