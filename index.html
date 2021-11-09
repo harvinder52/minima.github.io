@@ -11,6 +11,7 @@
 
 	body{
 		font-family: -webkit-pictograph;
+		margin: 0px;
 	}
 	
 .flex-container {
@@ -52,9 +53,8 @@
 	}
 
 .profileIMG{
-	padding: 25px;
-	padding-top: 50px;
-	border-radius: 30%;
+	padding: 30px;
+	border-radius: 50%;
 }
 #minFooter{
 	border-radius: 4px;
@@ -75,6 +75,17 @@
 	position: absolute;
 	top: 80%;
 	left: 5%;
+	background-color: #019378;
+	text-align: center;
+	width: 142px;
+	height: 33px;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	 text-shadow: 2px 2px gray;
+	font-family: -webkit-pictograph;
+	border-radius: 5px;
+	border:2px black;
 }
 .col{
      justify-content: space-between;
@@ -100,19 +111,66 @@
 	font-family: sans-serif;
 	font-size: 14px;
 	background-color: #9494941f;
+	padding: 10px;
+
 }
 
 .stepsContainer{
 	display: flex;
 	padding-left: 10px;
-	justify-content: space-around;
+	justify-content: center;
 	flex-direction: column;
+}
+
+#arrow1{
+	position: relative;
+    top: 35%;
+    left: 81%;
+    width: 120px;
+    z-index: +22;
+}
+#arrow2{
+	position:relative;
+    top: 0%;
+    left: 75%;
+    width: 120px;
+    z-index: +22;
+    transform: rotate(43deg)
+}
+
+#arrow3{
+	position: relative;
+    top: -10%;
+    left: 75%;
+    width: 120px;
+    z-index: +22;
+    transform: rotate(-30deg)
+}
+#arrow4{
+	position: relative;
+    top: 25%;
+    left: -13%;
+    width: 120px;
+    z-index: +22;
+    transform: rotate(210deg)
+}
+
+
+
+.stepsContainerRight{
+	display: flex;
+	padding-left: 10px;
+	justify-content: space-evenly;
+	flex-direction: column;
+
 }
 
 
 
 </style>
 <body>
+
+
 <div style="text-align: center; background-color: #FBFCF6; padding-right: 20%; padding-left: 20%;">
 	<h2>Welcome to MINIMA!</h2>
 	<p>Minima is a chrome extension which helps in increasing the efficiency of the non-technical users(like PMs, Designers ...) to quickly change, experiment, and play around with styling, content of the existing website without the need to code and either publish them or share with others for feedback.</p>
@@ -126,21 +184,28 @@
 	 </p>
 
 </div>
-
+<hr>
 <div>
 	
 
 
 
 </div>
-<nav id="minimaNavbar"> Welcome to My Website!</nav>
+
 <div class="flex-container">
-<div class="stepsContainer">		
-<div class="minSteps"> <h3>Change the button style from Minima Repo</h3> </div>
-		
+
+<div class="stepsContainer">
+<img id="arrow1" src="arrow.png">	
+	
+<div class="minSteps" style = "margin-bottom: 16px; "> <h3>Change the button style from Minima Repo.</h3><p>Go to the tab "Library" in the floating pane. Select your favourite style.</p> </div>
+
+	
 <div class="minSteps"> <h3>Change the button style from Minima Repo.</h3><p>Go to the tab "Library" in the floating pane. Select your favourite style.</p> </div>
-		
-<div class="minSteps"> <h3>Change the button style from Minima Repo</h3> </div>
+<img id="arrow2" src="arrow.png">
+<div class="minSteps"> <h3>Change the button style from Minima Repo.</h3><p>Go to the tab "Library" in the floating pane. Select your favourite style.</p> </div>
+
+<img id="arrow3" src="arrow.png">
+
 </div>
 
 
@@ -150,46 +215,24 @@
  	
   <img class="profileIMG" src="placeIMG.png" alt="Avatar" align="right" >
 
-		<h1 class="userTitle" >Username</h1>
-		<h2 class="userTitle" >Profession </h2>
+		<h1 class="userTitle" >Sarah Armstrong</h1>
+		<h2 class="userTitle" > Proffesor at UW</h2>
         <p style="padding: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
         	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut
         </p><button class="contBut"> Contact Me!</button> 
  </div>
-<div class="stepsContainer">
+<div class="stepsContainerRight">
+	<img id="arrow4" src="arrow.png">
 <div class="minSteps"> <h3>Change the button style from Minima Repo.</h3><p>Go to the tab "Library" in the floating pane. Select your favourite style.</p> </div>
+
+
 		
-<div class="minSteps"> <h3>Change the button style from Minima Repo</h3> </div>
-</div>
 
 </div>
 
-<div>
-<footer id="minFooter">
-	<div class="col1">
-	<ul>     
-	    <li>About Us</li>
-        <li> Reviews</li>
-        <li> Feedback</li>
-    </ul>
-    </div>
-    <div class="col">
-	<ul>     
-	    <li>Contact You!</li>
-        <li> Reviews</li>
-        <li> Feedfront</li>
-    </ul>
-    </div>
-    <div class="col">
-	<ul>     
-	    <li>Orkut</li>
-        <li>Google+</li>
-        <li>MySpace</li>
-    </ul>
-    </div>
-
-</footer>
 </div>
+
+
 
 	
 </body>
