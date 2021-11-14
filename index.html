@@ -6,403 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
 	<title>Minima</title>
+	<link rel="stylesheet" href="src/minimaHomePage.css">
+	
 </head>
-<style type="text/css">
-
-	body{
-		font-family: -webkit-pictograph;
-		margin: 0px;
-	}
-	
-.flex-container {
-  display: flex;
-  background-color: white;
-  justify-content: space-around;
-  
-  height: 600px;
-  width: 100%;
-  
-}
-
-.pageCard {
-	text-align: left;
-    box-shadow: 0 14px 17px 0 rgba(0,0,0,0.68);
-    background-color: #FBFCF6;
-    padding: 5px;
-    width: 100%;
-    margin: 10px;
-    height: 70%;
-    position: relative;
-    top: 15%;
-    left: 0%;
-    font-family: -webkit-pictograph;
-  }
 
 
-#minimaNavbar{
-	border-radius: 4px;
-	border-bottom: white;
-	width: 100%;
-	height: 35px;
-	background-color: #005f63f2;
-	color: #FBFCF6;
-	text-align: center;
-	padding-top: 10px;
-	font-size: 1.25Rem;
-	
-	}
-
-.profileIMG{
-	padding: 30px;
-	border-radius: 50%;
-}
-#minFooter{
-	border-radius: 4px;
-	background-color: #005f63f2;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: space-around;
-	color: white;
-	
-	padding-top: 10px;
-	
-	font-family: -webkit-pictograph;
-
-}
-
-.contBut{
-	position: absolute;
-	top: 80%;
-	left: 5%;
-	background-color: #019378;
-	text-align: center;
-	width: 142px;
-	height: 33px;
-	color: white;
-	font-size: 14px;
-	font-weight: 400;
-	 text-shadow: 2px 2px gray;
-	font-family: -webkit-pictograph;
-	border-radius: 5px;
-	border:2px black;
-}
-.col{
-     justify-content: space-between;
-}
-
-
-.userTitle{
-	padding-left:20px;
-
-}
-
-.userTitle:hover + #sideSection {
-	opacity: 1.0;
-}
-
-#tooltip{
-	background-color: red;
-}
-
-
-
-.minSteps{
-	font-family: sans-serif;
-	font-size: 14px;
-	background-color: #9494941f;
-	padding: 10px;
-
-}
-
-.stepsContainer{
-	display: flex;
-	padding-left: 10px;
-	justify-content: center;
-	flex-direction: column;
-}
-
-#arrow1{
-	position: relative;
-    top: 35%;
-    left: 81%;
-    width: 120px;
-    z-index: +22;
-}
-#arrow2{
-	position:relative;
-    top: 0%;
-    left: 75%;
-    width: 120px;
-    z-index: +22;
-    transform: rotate(43deg)
-}
-
-#arrow3{
-	position: relative;
-    top: -10%;
-    left: 75%;
-    width: 120px;
-    z-index: +22;
-    transform: rotate(-30deg)
-}
-#arrow4{
-	position: relative;
-    top: 25%;
-    left: -13%;
-    width: 120px;
-    z-index: +22;
-    transform: rotate(210deg)
-}
-
-
-
-.stepsContainerRight{
-	display: flex;
-	padding-left: 10vh;
-	justify-content: space-evenly;
-	flex-direction: column;
-
-}
-
-#minimaNav {
-	font-family: sans-serif;
-width: 100%;
-height: 72px;
-background-color: white;
-color: black;
-border-bottom: 1px solid gray;
-}
-
-#btnLogin{
-	position: relative;
-top: 25%;
-left: 61%;
-background-color: #f1e4ff;
-width: 100px;
-height: 40px;
-color: #8c30f5;
-border-radius: 8px;
-font-family: sans-serif;
-font-weight: 700;
-font-size: 14px;
-border: 0px solid white;
-}
-
-#btnSignup{
-	position: relative;
-top: 25%;
-left: 62%;
-background-color: #8c30f5;
-width: 100px;
-height: 40px;
-color: white;
-font-size: 14px;
-font-weight: 700;
-border: 1px solid gray;
-border-radius: 8px;
-font-family: sans-serif;
-
-}
-
-.navLabel {
-
-	font-family: sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 20px;
-	position: relative;
-	top:25%;
-
-}
-.navLabel1{
-	
-	
-	left:10%;
-}
-.navLabel2{
-	
-	
-	left:11%;
-}
-
-.navLabel3{
-	
-	
-	left:12%;
-}
-
-.navTitle{
-	position: relative;
-	top:25%;
-	left: 38%;
-	
-	font-family: sans-serif;
- 	font-style: normal;
-	font-weight: 800;
-	font-size: 20px;
-	line-height: 20px;
-}
-
-.heroContent {
-	position: relative;
-	left:165px;
-	top: 212px;
-	background-color: transparent;
-	width: 580px;
-	
-
-}
-.heroWrapper{
-	height: 792px;
-	width: 1110px;
-}
-
-#btnInstall{
-	font-family: sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 30px;
-width: 196px;
-height: 62px;
-background: #8C30F5;
-border-radius: 8px;
-text-align: center;
-color:#FFFFFF;
-border: 0px solid gray;
-}
-#btnTry{
-	width: 196px;
-height: 62px;
-background: #F1E4FF;
-color:#8C30F5;
-border-radius: 8px;
-font-family: sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 30px;
-text-align: center;
-border: 0px solid gray;
-}
-#heroIMG{
-	width: 100%;
-	height: inherit;
-}
-
-.divHeroIMG{
-	height: 620px;
-    width: 800px;
-    top: -36%;
-    left: 57%;
-    position: relative;
-    z-index: -22;
-}
-.minFont{
-	font-family: sans-serif;
-	font-size: 72px;
-	font-style: normal;
-    font-weight: 800;
-    line-height: 98px;
-}
-.mainWrapper{
-	width: 1440px;
-
-}
-.worksWrapper{
-	background-color: #F1E4FF;
-
-
-	height: 560px;
-	width: 1440px;
-}
-
-.stepsWrapper{
-	display: flex;
-	justify-content: center;
-	height: 328px;
-	width: 1110px;
-	padding: 40px 165px 64px 165px;
-}
-.stepsDiv{
-	height: 350px;
-	width: 328px;
-	background-color: #F1E4FF;
-}
-.textStyle2{
-font-family: sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-
-}
-.textStyle5{
-	font-family: sans-serif;
-	font-style: normal;
-font-weight: 800;
-font-size: 48px;
-line-height: 64px;
-}
-.minCard{
-	text-align: left;
-    box-shadow: 0 14px 17px 0 rgba(0,0,0,0.68);
-    background-color: #FBFCF6;
-    padding: 5px;
-    width: 730px;
-    margin: 10px;
-    height: 467px;
-    position: relative;
-    left: 355px;
-    top:231px;
-    font-family: -webkit-pictograph;
-  }
-  .minPGD{
-  	position: relative;
-  	top: 25px;
-  	left: 627px;
-  	width: 186px;
-  	height: 69px;
-  }
-  .cardLOGO{
-  	position: relative;
-  	top:38px;
-  	left:295px;
-  }
-
-#cardBtn{
-	position: absolute;
-width: 175px;
-height: 55px;
-left: 277.5px;
-top: 361.89px;
-
-background: #8C30F5;
-border-radius: 8px;
-font-family: sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 30px;
-color: white;
-
-border: 0px solid gray;
-text-align: center;
-font-feature-settings: 'liga' off;
-}
-
-
-</style>
 <body>
 <div class="mainWrapper">
 	<div id="minimaNav">
 		<span class="navLabel navLabel1">About</span >
 		<span class="navLabel navLabel2">Pricing</span>
 		<span class="navLabel navLabel3">Contact</span>
-
-		<span class="navTitle">Minima</span>
+		
+		<span class="navTitle"><img style="position: relative;
+    top: 6%;left: -0.3%;" src="assets/navLogo.png">Minima</span>
 
 		<button id="btnLogin">Login</button>
 		<button id="btnSignup">Sign up</button>
@@ -455,23 +72,22 @@ font-feature-settings: 'liga' off;
 	line-height: 20px;">
 				©2021 Minima. All rights reserved
 			</div>
-	<div style=" ;height:28px; width: 130px; padding-top: 22px; padding-left: 272px;"  >
-		
-			<img src="assets/minFooter.png" >
-		
 	
-</div>
+<span class="footerTitle"><img style="position: relative;
+    top: 19%;left: -5%;" src="assets/navLogo.png">Minima</span>
 
 
-<div style="height: 24px; width: 144px; padding-top: 24px; padding-left: 357px">
+<div style="height: 24px; width: 144px; padding-top: 24px; padding-left: 714px">
 	<img src="assets/sociallinks.png">
 </div>
 </footer>
-<section style="height: 768px; width: 1110px">
+</div>
+<section id="extCheckPage"style="height: 768px; width: 1110px">
 <img  class="minPGD" src="assets/minPGD.png">
 
 <div class="minCard">
 	<div class="cardLOGO">	<img  src="assets/minLOGO.png"></div>
+
 	<div style="position: relative;top:1px;left:158px; font-family: sans-serif;
 font-style: normal;
 font-weight: 800;
@@ -507,7 +123,7 @@ line-height: 86px;"> Install Plugin</div>
  
  <div class="pageCard">
  	
-  <img class="profileIMG" src="placeIMG.png" alt="Avatar" align="right" >
+  <img class="profileIMG" src="assets/placeIMG.png" alt="Avatar" align="right" >
 
 		<h1 class="userTitle" >Sarah Armstrong</h1>
 		<h2 class="userTitle" > Proffesor at UW</h2>
@@ -526,9 +142,8 @@ line-height: 86px;"> Install Plugin</div>
 
 </div>
 
-</div>
 
 
-	
+<script src="src/minimaHomePage.js"></script>	
 </body>
 </html>
