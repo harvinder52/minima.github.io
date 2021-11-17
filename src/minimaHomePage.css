@@ -395,7 +395,7 @@ text-align: center;
 font-feature-settings: 'liga' off;
 }
 .footerTitle{
-	width: 107px;
+	width: 236px;
 	height: 28px;
 	position: relative;
 	top:19%;
@@ -403,7 +403,16 @@ font-feature-settings: 'liga' off;
 	color: white;
 	font-family: Manrope;
  	font-style: normal;
-	font-weight: 800;
-	font-size: 20px;
+	font-weight: 600;
+	font-size: 15px;
 	line-height: 20px;
+}
+.flagImg{
+	height: 20px;
+    width: 20px;
+    border-radius: 30%;
+    position: relative;
+    top: 20%;
+    left: 0;
+    padding-left: 4px;
 }
