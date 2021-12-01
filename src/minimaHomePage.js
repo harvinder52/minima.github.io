@@ -1,28 +1,30 @@
 console.log("made with love")
 
 
-let inputEmail = document.querySelector('#inputEmail');
+// let inputEmail = document.querySelector('#inputEmail');
 
-inputEmail.oninput = function (){
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputEmail.value))
-  {
-    console.log("email valid")
-    return (true)
-  }
-    console.log("You have entered an invalid email address!")
-    return (false)
-}
+// inputEmail.oninput = function (){
+//  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputEmail.value))
+//   {
+//     console.log("email valid")
+//     return (true)
+//   }
+//     console.log("You have entered an invalid email address!")
+//     return (false)
+// }
 
 
-let mainWrapper = document.querySelector(".mainWrapper");
+
 
 
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("emailBtn");
+var btn2 = document.getElementById("emailBtn");
 
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn2.onclick = function() {
+  
+
   modal.style.display = "block";
   console.log("button clicked emalBtn")
   document.body.style.overflow = "hidden"
