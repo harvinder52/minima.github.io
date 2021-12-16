@@ -62,20 +62,7 @@ padding: 0.5rem;
 	padding: 30px;
 	border-radius: 50%;
 }
-#minFooter{
-	border-radius: 4px;
-	background-color: #005f63f2;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: space-around;
-	color: white;
-	
-	padding-top: 10px;
-	
-	font-family: Manrope;
 
-}
 
 .contBut{
 	position: absolute;
@@ -350,6 +337,8 @@ border: 0px solid gray;
 	display: flex;
 	justify-content: space-between;
 	height: 328px;
+	background-color: #F1E4FF;
+
 	
 }
 .stepsDiv{
@@ -364,6 +353,13 @@ font-weight: 600;
 font-size: 24px;
 line-height: 32px;
 
+}
+.textStyle3{
+	font-family: Manrope;
+	font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 8px;
 }
 .textStyle5{
 	font-family: Manrope;
@@ -544,4 +540,12 @@ border-radius: 8px;
 text-align: center;
 color: #FFFFFF;
 border: 0px solid gray;
+}
+
+.align-div-items{
+	color: white; 
+	margin: auto; 
+	text-align: center;
+	padding:2px;
+
 }

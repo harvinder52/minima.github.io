@@ -23,12 +23,29 @@ line-height: 86px;"> Install Plugin</div>
 	<button id="cardBtn" onclick="javascript:window.location.href = 'demoPage.html'
 ">Install Plugin</button>
 	
+<script type="text/javascript">
+	
+    let  id = "pienmbfpcdbacfenagdddelbbcfockak";
+   chrome.runtime.sendMessage(id, {action: "id", value : id}, function(response) {
+    if(response && (response.id == id)) //minima extension installed
+    {    
+        console.log("minima installed")
+        console.log(response);
+         document.querySelector("#cardBtn").textContent="Installed"
+    }
+    else //extension not installed
+    {
+        console.log("Please consider installing extension");
+        document.querySelector("#cardBtn").textContent="Not Installed"
+       
+    }
 
+});
+</script>
 
 
 </div>
 </section>
-<script src="src/minimaHomePage.js"></script>	
 
 </body>
 </html>
